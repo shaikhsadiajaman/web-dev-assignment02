@@ -11,6 +11,9 @@
 .light-gray{
 color: rgba(137, 135, 161, 1);
 }
+.color{
+  color: rgba(233, 90, 8, 1);
+}
 /* navbar styles */
 .navbar{
   max-width: 1440px;
@@ -48,21 +51,76 @@ ul{
   color: rgba(0, 0, 0, 1);
 }
 
+/* banner styles */
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+ }
+.bnr-section{
+  max-width: 570px;
+  max-height: 300px;
+  }
+.bnr-title{
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.bnr-description{
+  color: rgba(0, 0, 0, 0.5);
+}
+.bnr-img{
+  width: 570px;
+  height: 335px;
+}
+
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
   .home, .light-gray {
     display: none;
   }
   .navbar {
+    justify-content: space-between;
     margin: 20px;
+    flex-wrap: nowrap;
   }
-
   .nav-list {
+    justify-content: right;
     margin-top: 40px;
-    text-wrap: none
+    text-wrap: none;
   }
-  .logo img{
+  .logo img {
     max-width: 70px;
     margin-top: 20px;
+  }
+   .banner {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 20px;
+  }
+  .bnr-img img { 
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .bnr-section {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .bnr-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .bnr-description {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  body {
+    overflow-x: hidden;
   }
 }
