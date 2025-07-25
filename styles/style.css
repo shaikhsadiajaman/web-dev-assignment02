@@ -219,3 +219,84 @@ body {
     border-radius: 8px;
     margin-bottom: 1rem;
 }
+
+/* Plants Lover Section */
+.plants-lover {
+    padding: 5rem 0;
+    background: white;
+}
+
+.plants-lover-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.plants-lover-image {
+    position: relative;
+}
+
+
+.plants-lover-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+    
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    animation: spin 3s linear infinite;
+    z-index: 10;
+    
+}
+
+
+.trusted-badge img {
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.plants-lover-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #2c3e50;
+}
+
+
+.plants-lover-content ul {
+    list-style: none;
+}
+
+.plants-lover-content li {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #5a6c7d;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.plants-lover-content li::before {
+    content: "•";
+    color: #ff6b35;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
