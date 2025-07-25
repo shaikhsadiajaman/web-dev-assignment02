@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 .noto-serif-font{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -7,120 +14,68 @@
   font-variation-settings:
     "width" 100;
 }
-/* shared styles */
-.light-gray{
-color: rgba(137, 135, 161, 1);
-}
-.color{
-  color: rgba(233, 90, 8, 1);
-}
-/* navbar styles */
-.navbar{
-  max-width: 1440px;
-  display: flex;
-  flex-wrap: nowrap;
- margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  justify-content: space-between;
-}
-.logo img{
-  max-width: 135px;
-}
-.list-items{
-  display: flex;
-}
-.nav-list a{
-  text-decoration: none;
-  /* color: black; */
-}
-ul{
-  display: flex;
-  text-decoration: none;
-  gap: 40px;
-  text-decoration: none;
-  list-style: none;
-  margin-top: 40px;
-}
-.home{
-  color: rgba(37, 36, 50, 1);
-  font-weight: 600;
-}
-.cart{
-  color: rgba(0, 0, 0, 1);
+    
+    line-height: 1.6;
+    
 }
 
-/* banner styles */
-.banner{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 100px;
- }
-.bnr-section{
-  max-width: 570px;
-  max-height: 300px;
-  }
-.bnr-title{
-  font-size: 65px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.bnr-description{
-  color: rgba(0, 0, 0, 0.5);
-}
-.bnr-img{
-  width: 570px;
-  height: 335px;
+/* Navbar Styles */
+.navbar {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
 }
 
-/* responsive for mobile devices */
-@media screen and (max-width: 576px) {
-  .home, .light-gray {
-    display: none;
-  }
-  .navbar {
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
     justify-content: space-between;
-    margin: 20px;
-    flex-wrap: nowrap;
-  }
-  .nav-list {
-    justify-content: right;
-    margin-top: 40px;
-    text-wrap: none;
-  }
-  .logo img {
-    max-width: 70px;
-    margin-top: 20px;
-  }
-   .banner {
-    flex-direction: column;
-    flex-direction: column-reverse;
-    padding: 20px;
-    gap: 20px;
-  }
-  .bnr-img img { 
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-  .bnr-section {
-    max-width: 100%;
-    text-align: left;
-    margin-top: 20px;
-  }
-  .bnr-title {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-  .bnr-description {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  body {
-    overflow-x: hidden;
-  }
+    align-items: center;
+}
+
+
+
+.nav-logo img {
+    width: 135px;
+    height: 82px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6b35;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.nav-cart img {
+    width: 20px;
+    height: 20px;
 }
