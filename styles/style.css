@@ -413,7 +413,7 @@ deals-header h2 {
 .join-section {
     background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
     
-                url('/assets/news-letter-bg.png') center/cover no-repeat;
+                url('../assets/news-letter-bg.png') center/cover no-repeat;
     min-height: 400px;
     display: flex;
     align-items: center;
