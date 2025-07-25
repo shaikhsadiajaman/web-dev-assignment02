@@ -79,3 +79,44 @@ body {
     width: 20px;
     height: 20px;
 }
+
+/* Banner Styles */
+.banner {
+    padding: 4rem 0;
+    background: white;
+}
+
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: #2c3e50;
+}
+
+.highlight {
+    color: #ff6b35;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+    color: #5a6c7d;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
